@@ -150,10 +150,6 @@ label {
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-.error {
-    border: 1px solid red;
-}
-
 /* Submit button */
 
 button {
@@ -179,4 +175,14 @@ strong {
 #login {
     margin-top: 50px;
     margin-left: 30px;
+}
+
+/* Js Classes */
+
+.error {
+    border: 1px solid red;
+}
+
+.feedbackText {
+    font-size: 0.7rem;
 }
