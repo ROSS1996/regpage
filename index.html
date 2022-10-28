@@ -9,15 +9,17 @@
 </head>
 <body>
     <main>
-        <div id="container">
+        <!-- Picture -->
+        <div class="container" id="picture">
             <div id="logo">
-                <img src="./assets/odin-lined.png" alt="Logo" id="logoImg">
-                <h1>ODIN</h1>
+                <img src="./assets/logo.png" alt="Logo" id="logoImg">
+                <h1 id="companyName">ODIN</h1>
             </div>
             <p id="credit">Photo by <a href="https://www.pexels.com/@mayday/" target="_blank" rel="external">Yurii Hlei</a> on
                 <a href="https://www.pexels.com/" target="_blank" rel="external">Pexels</a></p>
         </div>
-        <div id="content">
+        <!-- Text -->
+        <div class="container" id="content">
             <p id="info">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                 Asperiores quod quisquam adipisci tempore ipsam cumque officia placeat dolorem quos, natus ex veniam optio? Atque id, ratione veritatis facere quod quaerat?</p>
             <form action="" method="get">
@@ -25,31 +27,31 @@
                     <div class="row">
                         <div class="field">
                             <label for="firstName">First Name</label>
-                            <input type="text" name="firstName" id="firstName" class="inputField">
+                            <input type="text" name="firstName" id="firstName" class="inputField" required>
                         </div>
                         <div class="field">
                             <label for="lastName">Last Name</label>
-                            <input type="text" name="lastName" id="lastName" class="inputField">
+                            <input type="text" name="lastName" id="lastName" class="inputField" required>
                         </div>
                     </div>
                     <div class="row">
                         <div class="field">
                             <label for="email">Email</label>
-                            <input type="email" name="email" id="email" class="inputField">
+                            <input type="email" name="email" id="email" class="inputField" required>
                         </div>
                         <div class="field">
                             <label for="phone">Phone Number</label>
-                            <input type="tel" name="phone" id="phone" class="inputField">
+                            <input type="tel" name="phone" id="phone" class="inputField" required>
                         </div>
                     </div>
                     <div class="row">
                         <div class="field">
                             <label for="password">Password</label>
-                            <input type="password" name="password" id="password" class="inputField">
+                            <input type="password" name="password" id="password" class="inputField" required>
                         </div>
                         <div class="field">
-                            <label for="password">Confirm Password</label>
-                            <input type="password" name="confirmation" id="confirmation" class="inputField">
+                            <label for="confirmation">Confirm Password</label>
+                            <input type="password" name="confirmation" id="confirmation" class="inputField" required>
                         </div>
                     </div>
                 </div>
