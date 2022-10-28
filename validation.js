@@ -29,3 +29,25 @@ email.addEventListener("focusout", function () {
         invalidEmail.remove()
     }
 })
+
+phone.addEventListener("focusout", function () {
+    if(!phone.value.match(phoneFormat))
+    {
+        phone.classList.add("error");
+        invalidPhone = document.getElementById('invalidPhone')
+        if (invalidPhone == null) {
+            const errorPhone = document.createElement("p");
+            const errorPhoneTxt = document.createTextNode("Error: Invalid Phone");
+            errorPhone.appendChild(errorPhoneTxt);
+            errorPhone.id = 'invalidPhone'
+            errorPhone.style.cssText = 'font-size: 0.7rem; color: red'
+            phone.parentNode.insertBefore(errorPhone, phone.nextSibling)
+        }
+    }
+    else
+    {
+        phone.classList.remove("error");
+        invalidPhone = document.getElementById('invalidPhone')
+        invalidPhone.remove()
+    }
+})
