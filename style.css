@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    height: 100vh;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    text-transform: uppercase;
+}
+
+h1 {
+    color: white;
+}
+
+button {
+    height: 40px;
+    width: 200px;
+    background-color: #596c49;
+    cursor: pointer;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 40px;
+    margin-left: 30px;
+}
+
+strong {
+    color: #596c49;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.formFields {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    padding: 30px;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+#container {
+    background-image: url(./assets/backgroung.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 25vw;
+    height: 100vh;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #f9fbfa;
+    flex: 1;
+    height: 100vh;
+}
+
+#info {
+    font-size: 1.4rem;
+    font-weight: bold;
+    width: 45vw;
+    margin-bottom: 150px;
+    padding-top: 150px;
+    padding-left: 30px;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#logo {
+    position: relative;
+    top: 15%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    opacity: 0.7;
+    width: 25vw;
+}
+
+#credit {
+    position: absolute;
+    top: 97%;
+    color: white;
+}
+
+#credit a {
+    color:  white;
+    text-decoration: underline;
+}
+
+#logoImg {
+    width: 100px;
+    height: 100%;
+}
+
+#login {
+    margin-top: 50px;
+    margin-left: 30px;
+}
