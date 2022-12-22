@@ -3,186 +3,187 @@
 @import url("https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,800");
 @import url("https://fonts.googleapis.com/css?family=Maven+Pro:300,400,500,800");
 
-
 /* Resetter */
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 /* Page Content */
 
 main {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    font-family: 'Ubuntu';
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  font-family: "Ubuntu";
 }
 
 .container {
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
 }
 
 /* Picture */
 
 #picture {
-    background-image: url('./assets/background.jpg');
-    background-size: cover;
-    background-position: center;
-    width: 25vw;
-    align-items: center;
+  background-image: url("./images/background.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 25vw;
+  align-items: center;
 }
 
 #logo {
-    background-color: rgba(0, 0, 0, .50);
-    width: 25vw;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    top: 15%;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 25vw;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: 15%;
 }
 
 #logoImg {
-    width: 100px;
-    height: auto;
+  width: 100px;
+  height: auto;
 }
 
 #companyName {
-    color: white;
-    font-family: 'Titan One';
+  color: white;
+  font-family: "Titan One";
 }
 
 #credit {
-    position: absolute;
-    top: 97%;
-    color: white;
+  position: absolute;
+  top: 97%;
+  color: white;
 }
 
 #credit a {
-    color:  white;
-    text-decoration: underline;
+  color: white;
+  text-decoration: underline;
 }
 
-#picture, #logoImg{
-    -webkit-user-select: none; /* Safari */
-    -moz-user-select: none; /* Firefox */
-    -ms-user-select: none; /* IE10+/Edge */
-    -webkit-user-drag: none;
-    user-select: none; /* Standard */
+#picture,
+#logoImg {
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  -webkit-user-drag: none;
+  user-select: none; /* Standard */
 }
 
 /* Text */
 
 #content {
-    gap: 10px;
-    background-color: #f9fbfa;
-    flex-grow: 1;
+  gap: 10px;
+  background-color: #f9fbfa;
+  flex-grow: 1;
 }
 
 /* Text Info*/
 
 #info {
-    font-size: 1.4rem;
-    font-weight: bold;
-    width: 45vw;
-    margin-bottom: 150px;
-    padding-top: 150px;
-    padding-left: 30px;
-    font-family: 'Ubuntu';
+  font-size: 1.4rem;
+  font-weight: bold;
+  width: 45vw;
+  margin-bottom: 150px;
+  padding-top: 150px;
+  padding-left: 30px;
+  font-family: "Ubuntu";
 }
 
 /* Form fields */
 
 form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
 .formFields {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    background-color: white;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
-    padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  padding: 30px;
 }
 
 /* Separate fields in rows */
 
 .row {
-    display: flex;
-    flex-direction: row;
-    gap: 50px;
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
 }
 
 /* Put label over the input field */
 
 .field {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    gap: 2px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 2px;
 }
 
 label {
-    text-transform: uppercase;
-    font-weight: 500;
-    font-size: 0.78rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 0.78rem;
 }
 
 .inputField {
-    height: 22px;
-    width: 280px;
-    border: 1px solid lightgrey;
-    text-indent: 5px;
+  height: 22px;
+  width: 280px;
+  border: 1px solid lightgrey;
+  text-indent: 5px;
 }
 
 .inputField:focus {
-    outline: none;
-    border: 1px solid #1c4ed9;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  outline: none;
+  border: 1px solid #1c4ed9;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 /* Submit button */
 
 button {
-    height: 40px;
-    width: 200px;
-    background-color: #596c49;
-    cursor: pointer;
-    border: none;
-    color: white;
-    border-radius: 5px;
-    font-size: 1rem;
-    font-weight: bold;
-    margin-top: 40px;
-    margin-left: 30px;
+  height: 40px;
+  width: 200px;
+  background-color: #596c49;
+  cursor: pointer;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 40px;
+  margin-left: 30px;
 }
 
 /* Login text */
 
 strong {
-    color: #596c49;
+  color: #596c49;
 }
 
 #login {
-    margin-top: 50px;
-    margin-left: 30px;
+  margin-top: 50px;
+  margin-left: 30px;
 }
 
 /* Js Classes */
 
 .error {
-    border: 1px solid red;
+  border: 1px solid red;
 }
 
 .feedbackText {
-    font-size: 0.7rem;
+  font-size: 0.7rem;
 }
