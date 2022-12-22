@@ -1,4 +1,4 @@
-# Calculator
+# Register Page Template
 Template for a register page built with HTML and CSS. It also has a validator script to check the fields.
 
 ## Screenshot
